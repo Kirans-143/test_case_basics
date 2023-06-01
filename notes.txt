@@ -1,0 +1,42 @@
+/*
+In any test file we will see these three functions
+1. describe() ==> It is a suite of test scripts that gives an outer descripotion of the test suite
+2.test() ==> It is the smallest unit of test case to be executed
+3.expect() ==> It is an assertion. Every test() statement has an expect() function which takes value and expects a return value
+*/
+
+/*
+Types of jest matchers
+1.Equality 
+    test("Equality matcher",()=>{
+        expect(add(2,2)).toBe(4) ---->true
+        expect(add(2,-2)).not.toBe(7)  ----true
+
+    })
+2.Truthiness
+    test("Truthy Operators",()=>{
+        var name = "software testing help"
+        var n = null
+        expect(n).toBeNull()---> true
+        expect(name).not.toBeNull()    ---->true
+
+        expect(name).toBeTruthy()
+        expect(n).toBeFalsy()
+    })
+3. Number Matching
+    test("Numeric Operators",()=>{
+        var num1 =100
+        var num2 =-20
+        expect(num1).toBeGreaterThan(10)
+        expect(num2).toBeLessThanOrEqual(0)
+    })
+
+4. String Matching
+    test("String Matcher",()=>{
+        var string1 = "Software Testing"
+
+        expect(string1).toMatch(/test/)
+
+        expect(string1).not.toMatch(/abc)
+    })
+*/
